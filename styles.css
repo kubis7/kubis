@@ -1,0 +1,310 @@
+/* Nastavení pro celé tělo stránky */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://c1.peakpx.com/wallpaper/19/1/247/green-shoes-nike-grass-football-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrum všech textů */
+}
+
+/* Styl pro navigační menu */
+nav {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Tmavé pozadí pro navigaci */
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+/* Navigační položky */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Navigační odkazy */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+/* Efekt pro změnu barvy a zvětšení při hover */
+nav ul li:hover {
+    transform: scale(1.1);
+    color: #14f614;
+    background-color: rgba(196, 205, 196, 0.385); /* Světle zelené pozadí při hover */
+}
+
+/* Styly pro tabulky */
+table {
+    width: 80%; /* Nastavení šířky tabulky */
+    margin: 40px auto; /* Centrum tabulky na obrazovce */
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7); /* Jemnější pozadí pro tabulky */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Stín pro lepší vzhled */
+}
+
+/* Styly pro tabulky a text v tabulkách */
+th, td {
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Zvýraznění záhlaví tabulky */
+th {
+    background-color: rgba(0, 0, 0, 0.449);
+    font-weight: bold;
+}
+
+/* Styl pro texty v tabulkách */
+td {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Hlavní obsah stránok - container */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Jemně tmavé pozadí */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Stín pro lepší vzhled */
+}
+
+/* Nadpisy na stránkách */
+h1, h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* Styly pro texty v podstránkách */
+.intro-text, .response {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.968);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formulář pro kontaktní stránku */
+form {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Vstupní pole formuláře */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+/* Tlačítko pro odeslání formuláře */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling pro odpovědní text */
+.response {
+    color: #4CAF50;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Zvýraznění položek v menu při hover */
+nav ul li a:hover {
+    color: #12eb12;
+    transform: scale(1.1);
+}
+
+/* Zvýraznění textu v tabulkách */
+th, td {
+    transition: background-color 0.3s ease;
+}
+
+th:hover, td:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/* Formátování pro inputy v tabulkách */
+input[type="text"], input[type="email"], textarea {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Zpráva po odeslání (úprava pro průhledné pozadí) */
+.response {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 128, 0, 0); /* Průhledné pozadí */
+    padding: 15px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #ffffff; /* Zelený text */
+}
+/* Styl pro tabulky */
+table {
+    width: 100%;  /* Tabulka bude mít 100% šířky obrazovky */
+    max-width: 1200px;  /* Maximální šířka tabulky bude 1200px */
+    margin: 0 auto;  /* Tabulka bude vycentrována na stránce */
+    border-collapse: collapse;  /* Zajistí, že okraje se nebudou překrývat */
+    font-size: 20px;  /* Zvětší text uvnitř tabulky */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Přidá jemný stín kolem tabulky pro lepší vzhled */
+}
+
+/* Základní styl pro hlavičky tabulek */
+th {
+    background-color: rgba(0, 0, 0, 0.6);  /* Tmavý pozadí pro záhlaví */
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+/* Styly pro buňky tabulky */
+td {
+    background-color: rgba(0, 0, 0, 0.3);  /* Polotmavé pozadí pro buňky */
+    padding: 20px;  /* Zvětšené odsazení kolem textu */
+    color: white;
+    text-align: center;
+}
+
+/* Zajistí, že text v tabulce bude lépe čitelný */
+th, td {
+    font-size: 18px;  /* Zvětší velikost textu v hlavičkách a buňkách */
+}
+
+/* Odstranění hover efektu pro tabulku */
+table:hover {
+    transform: none;  /* Zruší zvětšování při hoveru */
+}
+/* Styl pro tabulky */
+table {
+    width: 100%;  /* Tabulka bude mít 100% šířky obrazovky */
+    max-width: 1200px;  /* Maximální šířka tabulky bude 1200px */
+    margin: 0 auto;  /* Tabulka bude vycentrována na stránce */
+    border-collapse: collapse;  /* Zajistí, že okraje se nebudou překrývat */
+    font-size: 24px;  /* Zvětší text v tabulce */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Přidá jemný stín kolem tabulky pro lepší vzhled */
+}
+
+/* Základní styl pro hlavičky tabulek */
+th {
+    background-color: rgba(0, 0, 0, 0.6);  /* Tmavý pozadí pro záhlaví */
+    padding: 20px;
+    text-align: left;
+    color: white;
+    font-size: 26px;  /* Zvětší text v hlavičce */
+}
+
+/* Styly pro buňky tabulky */
+td {
+    background-color: rgba(0, 0, 0, 0.3);  /* Polotmavé pozadí pro buňky */
+    padding: 20px;  /* Zvětšené odsazení kolem textu */
+    color: white;
+    text-align: center;
+    font-size: 24px;  /* Zvětší text v buňkách */
+}
+
+/* Zajistí, že text v tabulce bude lépe čitelný */
+th, td {
+    font-size: 24px;  /* Zvětší velikost textu v hlavičkách a buňkách */
+}
+
+/* Odstranění hover efektu pro tabulku */
+table:hover {
+    transform: none;  /* Zruší zvětšování při hoveru */
+}
+/* Styl pro fotbalový míč */
+.football {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://clipart-library.com/2023/nicubunu_Soccer_ball.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    pointer-events: none; /* Aby míč neblokoval další kliky */
+    animation: bounce 1.5s ease-out;
+}
+
+/* Animace skákání */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

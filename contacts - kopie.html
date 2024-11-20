@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podpora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigační menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="teams.html">Týmy</a></li>
+            <li><a href="results.html">Výsledky</a></li>
+            <li><a href="contacts.html">Podpora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hlavní obsah -->
+    <div class="container">
+        <h1>Podpora</h1>
+        <!-- Kontaktní formulář -->
+        <form id="contactForm" action="email.php" method="POST">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Odeslat">
+        </form>
+
+        <!-- Odpovědní text (po odeslání) -->
+        <div class="response" id="responseMessage" style="display:none;">
+            <p>Vaše zpráva byla úspěšně odeslána!</p>
+            <a href="index.html">Zpět na úvodní stránku</a>
+        </div>
+    </div>
+
+    <script>
+        // Zobrazí zprávu o úspěšném odeslání formuláře
+        const form = document.getElementById('contactForm');
+        const responseMessage = document.getElementById('responseMessage');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Zabrání odeslání formuláře
+
+            // Tady můžeš mít logiku pro skutečné odeslání formuláře (např. AJAX)
+            responseMessage.style.display = 'block'; // Zobrazí úspěšnou zprávu
+            form.style.display = 'none'; // Skryje formulář po odeslání
+        });
+    </script>
+</body>
+</html>
